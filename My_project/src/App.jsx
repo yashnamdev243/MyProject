@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Gallery from "./pages/Gallery";
-
+import './index.css'; 
 
 function App() {
   return (

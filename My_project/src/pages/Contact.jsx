@@ -77,6 +77,8 @@
 
 // export default Contact;
 
+
+
 // File: src/pages/Contact.jsx
 import React from "react";
 import { Form, Input, Button } from "antd";
@@ -187,7 +189,25 @@ const Contact = () => {
             Send Us a Message
           </h3>
 
-          <Form layout="vertical" name="contact-form" onFinish={(values) => console.log(values)}>
+          <Form layout="vertical" name="contact-form" 
+          // onFinish={(values) => console.log(values, "Form Submitted")}
+          onFinish={(values) => {
+    const { name, email, message } = values;
+
+    // Format the message
+    const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Message:* ${message}`;
+
+    // WhatsApp number with country code (India = 91)
+    const phoneNumber = "919926642925"; // 91 is the country code for India
+
+    // WhatsApp API URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+    // Open WhatsApp with pre-filled message
+    window.open(whatsappURL, "_blank");
+  }}
+
+          >
             <Form.Item
               label="Full Name"
               name="name"
