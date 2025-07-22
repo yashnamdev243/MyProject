@@ -11,16 +11,20 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center relative">
         
         {/* Logo */}
+       
         <Link to="/" className="flex items-center gap-2">
+           <div className="w-18 h-18 flex items-center justify-center p-1 border border-[#e98948] rounded-full bg-[#e98948] "cls>
           <img
-            src="/logo.png"
+            src="/logo2.png"
             alt="Logo"
             className="w-10 h-10 object-contain"
           />
-          <h1 className="text-xl md:text-2xl font-bold text-[#4f342f] tracking-tight">
-            Namdev Shivling Art
-            <span className="text-[#e98948]"> Puratan</span>
-          </h1>
+          </div>
+          {/* <h1 className="text-xl md:text-2xl font-bold text-[#4f342f] tracking-tight">
+           Namdev Narmadeshwar Shivling 
+
+            <span className="text-[#e98948]"> Arts</span>
+          </h1> */}
         </Link>
 
         {/* Desktop Menu */}
@@ -59,7 +63,7 @@ const Navbar = () => {
         {/* Mobile Menu Panel */}
         {isMobileMenuOpen && (
           <div className="absolute top-16 left-0 w-full bg-white shadow-lg md:hidden flex flex-col gap-4 p-6 z-40 animate-fade-in">
-            {["Home", "About", "Contact"].map((item) => (
+            {["Home", "About", "Gallery", "Contact"].map((item) => (
               <Link
                 key={item}
                 to={`/${item.toLowerCase()}`}

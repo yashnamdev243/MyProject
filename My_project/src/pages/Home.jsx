@@ -28,13 +28,13 @@ const Home = () => (
       Namdev Shivling Art Puratan
     </motion.h2> */}
 <motion.h2
-      className="text-4xl md:text-5xl font-bold text-center text-[#332421] mb-2"
+      className="text-lg md:text-5xl font-bold text-center text-[#332421] "
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
     >
-      Namdev Shivling Art Puratan
+      Namdev Narmadeshwar Shivling Arts 
     </motion.h2>
     {/* Spiritual Tagline */}
       <motion.p
@@ -50,7 +50,7 @@ const Home = () => (
 
     {/* Description */}
     <motion.p
-      className="text-lg md:text-xl max-w-2xl text-[#332421] mb-8 leading-relaxed"
+      className="text-sm md:text-xl max-w-2xl text-[#332421] mb-8 leading-relaxed"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.3 }}
@@ -69,7 +69,7 @@ const Home = () => (
       <Link to="/about">
         <Button
           size="large"
-          className="px-6 py-2 rounded-full hover:!text-[#332421] shadow-md !border-[#332421]"
+          className="lg:px-6 lg:py-2 rounded-full hover:!text-[#332421] shadow-md !border-[#332421]"
         >
           Learn More
         </Button>
@@ -78,7 +78,7 @@ const Home = () => (
         <Button
           type="primary"
           size="large"
-          className="px-6 py-2 rounded-full !bg-[#472f1e] !text-white hover:!bg-[#332421] shadow-md"
+          className="lg:px-6 lg:py-2 rounded-full !bg-[#472f1e] !text-white hover:!bg-[#332421] shadow-md"
         >
           Contact Now
         </Button>

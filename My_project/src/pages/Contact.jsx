@@ -120,7 +120,7 @@ const Contact = () => {
               Have a question, feedback, or just want to say hello?
               Drop us a message and we’ll get back to you shortly.
             </p>
-            <blockquote className="italic flex items-center gap-3  border-l-4  bg-white  border-white text-black mb-3  shadow-md p-3 rounded-xl hover:shadow-lg transition duration-300 animate-fade-in">
+            <blockquote className="italic flex items-center gap-3  border-l-4    border-white text-white mb-3  shadow-md p-3 rounded-xl hover:shadow-lg transition duration-300 animate-fade-in">
               “The art of communication is the language of leadership.” <br />– James Humes
             </blockquote>
 

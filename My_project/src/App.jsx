@@ -7,7 +7,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Gallery from "./pages/Gallery";
-import './index.css'; 
+import "./index.css";
+import Entry from "./pages/Entry";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
+            <Route path="/" element={<Entry />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
